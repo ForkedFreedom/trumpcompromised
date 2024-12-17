@@ -1,0 +1,57 @@
+site_name: Trump Compromised
+site_url: https://trumpcompromised.com
+repo_name: ForkedFreedom/trumpcompromised
+repo_url: https://github.com/ForkedFreedom/trumpcompromised
+edit_uri: ""
+plugins:
+  - glightbox
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+theme:
+  favicon: ./assets/images/logo.jpg
+  logo: ./assets/images/logo.jpg
+  name: material
+  custom_dir: overrides
+  palette:
+    primary: black
+    scheme: slate
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.path
+    - navigation.footer
+    - navigation.expand
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.indexes
+nav:
+  - Home: index.md
+  - Articles: articles/index.md
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - abbr
+  - admonition
+extra:
+  annotate:
+    json: [.s2]
+  version:
+    provider: mike
+extra_css:
+  - ./assets/stylesheets/extra.css
+copyright: Copyright &copy; ForkedFreedom 2024 - 2025
